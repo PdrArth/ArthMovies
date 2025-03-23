@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:id="@+id/teladelogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Nome do App -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="ArthMovies"
+            android:textColor="@color/red"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Campo de Login -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/containeremail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:boxStrokeColor="@color/purple"
+            app:boxStrokeWidthFocused="2dp"
+            app:errorEnabled="true"
+            app:errorTextColor="@color/red"
+            app:helperTextEnabled="true"
+            app:helperTextTextColor="@color/orange">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/digitaremail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="true"
+                android:hint="Email"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/darker_gray"
+                android:textCursorDrawable="@color/purple" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Campo de Senha -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/containersenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:boxStrokeColor="@color/purple"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="password_toggle"
+            app:errorEnabled="true"
+            app:errorTextColor="@color/red"
+            app:helperTextEnabled="true"
+            app:helperTextTextColor="@color/orange">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/digitarsenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="true"
+                android:hint="Senha"
+                android:inputType="numberPassword"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/darker_gray"
+                android:textCursorDrawable="@color/purple" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Botão de Entrar -->
+        <Button
+            android:id="@+id/botaodeentrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/black"
+            android:padding="20dp"
+            android:text="Entrar"
+            android:textColor="@color/white"
+            app:strokeColor="@color/white"
+            app:strokeWidth="2dp" />
+
+        <!-- Texto de Ajuda -->
+        <TextView
+            android:id="@+id/textajuda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="Precisa de ajuda?"
+            android:textColor="@android:color/white" />
+
+        <!-- Link para Cadastro -->
+        <TextView
+            android:id="@+id/botaocadastro"
+            android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Novo por aqui? Inscreva-se agora."
+            android:textColor="@color/purple"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
